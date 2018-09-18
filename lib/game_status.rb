@@ -46,10 +46,10 @@ def won?(board)
     position_6 = board[win_index_6]
     
     if position_4 == "X" && position_5 == "X" && position_6 == "X"
-      return win_combos
+      return [3,4,5]
   
     elsif position_4 == "O" && position_5 == "O" && position_6 == "O"
-      return win_combos
+      return [3,4,5]
       
     else
       return false
