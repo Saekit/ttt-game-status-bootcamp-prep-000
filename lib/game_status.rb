@@ -63,8 +63,11 @@ end
 
 
 def winner(board)
- if win_combos == won?(board)
-   board[win_combos.first]
+ if wincombo == "X"
+   return "X"
+ end
+ if wincombo == "O"
+   return "O"
  end
 end
 
