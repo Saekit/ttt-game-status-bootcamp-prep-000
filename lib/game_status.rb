@@ -36,60 +36,7 @@ def won?(board)
     if position_1 == "X" && position_2 == "X" && position_3 == "X"
       return win_combos
   
-  
-  if WIN_COMBINATIONS[0].all? do |i|
-      board[i] == "X" || board[i] == "O"
-      return WIN_COMBINATIONS[0]
-    end
-  end
-  
-  if WIN_COMBINATIONS[1].all? do |i|
-      i == "X" || i == "O"
-      return WIN_COMBINATIONS[1]
-    end
-  end  
-  
-  if WIN_COMBINATIONS[2].all? do |i|
-      i == "X" || i == "O"
-      return WIN_COMBINATIONS[2]
-    end
-  end
-  
-  if WIN_COMBINATIONS[3].all? do |i|
-      i == "X" || i == "O"
-      return WIN_COMBINATIONS[3]
-    end
-  end  
-  
-  if WIN_COMBINATIONS[4].all? do |i|
-      i == "X" || i == "O"
-      return WIN_COMBINATIONS[4]
-    end
-  end  
-  
-  if WIN_COMBINATIONS[5].all? do |i|
-      i == "X" || i == "O"
-      return WIN_COMBINATIONS[5]
-    end
-  end
-  
-  if WIN_COMBINATIONS[6].all? do |i|
-      i == "X" || i == "O"
-      return WIN_COMBINATIONS[6]
-    end
-  end
-  
-  if WIN_COMBINATIONS[7].all? do |i|
-      i == "X" || i == "O"
-      return WIN_COMBINATIONS[7]
-    end
-  end
-  
-  if WIN_COMBINATIONS[8].all? do |i|
-      i == "X" || i == "O"
-      return WIN_COMBINATIONS[8]
-    end
-  end  
+    elsif 
 
 end
 
