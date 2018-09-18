@@ -65,6 +65,7 @@ end
 def winner(board)
   if WIN_COMBINATIONS == won?(board)
     board[wincombo.first]
+  end
 end
 
 
