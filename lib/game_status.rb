@@ -36,28 +36,6 @@ WIN_COMBINATIONS = [
 #       return false
 #     end
 #   end
-#   WIN_COMBINATIONS.detect do |win_combos|
-#     win_index_4 = win_combos[3]
-#     win_index_5 = win_combos[4]
-#     win_index_6 = win_combos[5]
-    
-#     position_4 = board[win_index_4]
-#     position_5 = board[win_index_5]
-#     position_6 = board[win_index_6]
-    
-#     if position_4 == "X" && position_5 == "X" && position_6 == "X"
-#       return [3,4,5]
-  
-#     elsif position_4 == "O" && position_5 == "O" && position_6 == "O"
-#       return [3,4,5]
-      
-#     else
-#       return false
-#     end
-#   end
-    
-  
-  
 # end
 
 def won?
