@@ -43,7 +43,8 @@ def won?(board)
     end
   end
   
-  
+  WIN_COMBINATIONS.each do |combos|
+    
   
   
 end
