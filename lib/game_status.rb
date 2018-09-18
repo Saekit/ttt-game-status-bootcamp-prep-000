@@ -38,11 +38,8 @@ def full?(board)
 end
 
 
+
 def draw?(board)
-  # returns true if the board has not been won but is full, 
-  # false if the board is not won and the board is not full,
-  # false if the board is won
-  
   if won?(board) == false && full?(board) == true
     return true
   end
@@ -55,8 +52,9 @@ def draw?(board)
 end
 
 
+
 def over?(board)
-  if full?(board) || draw?(board)
+  if full?(board) || draw?(board) || won?(board)
     return true
   else
     return false
