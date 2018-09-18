@@ -63,7 +63,7 @@ end
 
 def full?(board)
   board.all? do |space|
-    if position_taken?(board, index) == true
+    if space == position_taken?(board, index)
       return true
     else
       return false
