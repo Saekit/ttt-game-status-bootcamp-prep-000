@@ -38,13 +38,13 @@ WIN_COMBINATIONS = [
 #   end
 # end
 
-def won?
-  WIN_COMBINATIONS.detect do |combo|
-    position(combo[0]) == position(combo[1]) &&
-    position(combo[1]) == position(combo[2]) &&
-    position_taken?(combo[0])
-  end
-end
+# def won?
+#   WIN_COMBINATIONS.detect do |combo|
+#     position(combo[0]) == position(combo[1]) &&
+#     position(combo[1]) == position(combo[2]) &&
+#     position_taken?(combo[0])
+#   end
+# end
 
 
 
