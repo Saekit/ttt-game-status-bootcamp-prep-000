@@ -66,7 +66,7 @@ def full?(board)
     i == " " || i == nil
     return false
   else
-    return TRUE
+    return true
   end
 end
 
