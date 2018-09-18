@@ -87,7 +87,9 @@ def draw?(board)
 end
 
 
-
+def over?(board)
+  
+end
 
 
 
