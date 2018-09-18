@@ -63,7 +63,7 @@ end
 
 def full?(board)
   if board.detect do |i|
-    i == ""
+    i == " " || i == nil
 end
 
 
