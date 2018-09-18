@@ -63,12 +63,7 @@ end
 
 
 def winner(board)
- if wincombo == "X"
-   return "X"
- end
- if wincombo == "O"
-   return "O"
- end
+  
 end
 
 
