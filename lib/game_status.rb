@@ -97,13 +97,8 @@ end
 
 
 def winner?(board)
-  won?(board).all? do |space|
-    if space == "X"
-      return "X"
-    if space == "O"
-      return "O"
-    end
-  end
+ if WIN_COMBINATIONS 
+ 
 end
 
 
