@@ -44,7 +44,7 @@ def won?(board)
     end
   end
   
-  WIN_COMBINATIONS.each do |combos|
+  # WIN_COMBINATIONS.each do |combos|
     
   
   
