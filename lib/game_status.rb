@@ -16,14 +16,7 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board) 
-  #return false/nil if there is no win combination present in the board
-  #return the winning combination indexes as an array if there is a win
-  
-  # board.each do |space|
-  #   if space == "" || space == " "
-  #     return false
-  #   end
-  # end
+
   WIN_COMBINATIONS.detect do |win_combos|
     win_index_1 = win_combos[0]
     win_index_2 = win_combos[1]
@@ -43,8 +36,7 @@ def won?(board)
       return false
     end
   end
-  
-  # WIN_COMBINATIONS.each do |combos|
+
     
   
   
