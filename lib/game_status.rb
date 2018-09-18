@@ -36,7 +36,7 @@ def won?(board)
       return false
     end
   end
-  WIN_COMBINATIONS.detect do |win_combos|
+  WIN_COMBINATIONS.each do |win_combos|
     win_index_4 = win_combos[3]
     win_index_5 = win_combos[4]
     win_index_6 = win_combos[5]
