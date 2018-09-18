@@ -25,7 +25,15 @@ def won?(board)
     end
   end
   WIN_COMBINATIONS.detect do |win_combos|
+    win_index_1 = win_combos[0]
+    win_index_2 = win_combos[1]
+    win_index_3 = win_combos[2]
     
+    position_1 = board[win_index_1]
+    position_2 = board[win_index_2]
+    position_3 = board[win_index_3]
+    
+    if position_1 == "X" && position_2 == "X" && position_3 == "X"
   
   
   if WIN_COMBINATIONS[0].all? do |i|
