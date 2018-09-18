@@ -97,7 +97,8 @@ end
 
 
 def winner?(board)
- if win_combos == 
+ if win_combos == won?(board)
+   
  
 end
 
