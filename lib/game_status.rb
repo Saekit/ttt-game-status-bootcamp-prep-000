@@ -36,7 +36,25 @@ def won?(board)
       return false
     end
   end
-
+  WIN_COMBINATIONS.detect do |win_combos|
+    win_index_1 = win_combos[3]
+    win_index_2 = win_combos[4]
+    win_index_3 = win_combos[5]
+    
+    position_1 = board[win_index_1]
+    position_2 = board[win_index_2]
+    position_3 = board[win_index_3]
+    
+    if position_1 == "X" && position_2 == "X" && position_3 == "X"
+      return win_combos
+  
+    elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
+      return win_combos
+      
+    else
+      return false
+    end
+  end
     
   
   
