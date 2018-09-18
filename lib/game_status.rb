@@ -23,14 +23,7 @@ def won?(board)
     if space == "" || space == " "
       return false
     end
-    if (space == "X" || space == "O") do
-      WIN_COMBINATIONS.each do |combo|
-        combo.each do |index|
-          board[index] == combo[index]
-          return false
-        end
-      end
-    end
+  end
   
   
   
