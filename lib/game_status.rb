@@ -24,7 +24,8 @@ def won?(board)
       return false
     end
   end
-  
+  WIN_COMBINATIONS.detect do |win_combos|
+    
   
   
   if WIN_COMBINATIONS[0].all? do |i|
