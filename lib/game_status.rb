@@ -15,43 +15,14 @@ WIN_COMBINATIONS = [
   [2,4,6]   # diag right to left
 ]
 
-# def won?(board) 
 
-#   WIN_COMBINATIONS.detect do |win_combos|
-#     win_index_1 = win_combos[0]
-#     win_index_2 = win_combos[1]
-#     win_index_3 = win_combos[2]
-    
-#     position_1 = board[win_index_1]
-#     position_2 = board[win_index_2]
-#     position_3 = board[win_index_3]
-    
-#     if position_1 == "X" && position_2 == "X" && position_3 == "X"
-#       return win_combos
-  
-#     elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
-#       return win_combos
-      
-#     else
-#       return false
-#     end
-#   end
-# end
-
-# def won?
-#   WIN_COMBINATIONS.detect do |combo|
-#     position(combo[0]) == position(combo[1]) &&
-#     position(combo[1]) == position(combo[2]) &&
-#     position_taken?(combo[0])
-#   end
-# end
-
-def won?(board) WIN_COMBINATIONS.each do |wincombo| 
-  if (board[wincombo[0]]) == "X" && (board[wincombo[1]]) == "X" && (board[wincombo[2]]) == "X" 
+def won?(board) 
+  WIN_COMBINATIONS.each do |wincombo| 
+    if (board[wincombo[0]]) == "X" && (board[wincombo[1]]) == "X" && (board[wincombo[2]]) == "X" 
       return wincombo 
-  elsif (board[wincombo[0]]) == "O" && (board[wincombo[1]]) == "O" && (board[wincombo[2]]) == "O" 
-    return wincombo 
-    end 
+    elsif (board[wincombo[0]]) == "O" && (board[wincombo[1]]) == "O" && (board[wincombo[2]]) == "O" 
+      return wincombo 
+      end 
   end 
   false 
 end
