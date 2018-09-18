@@ -71,7 +71,8 @@ end
 
 
 def draw?(board)
-  
+  # returns true if the board has not been won but is full, 
+  # 
 end
 
 
