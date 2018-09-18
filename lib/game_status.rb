@@ -96,8 +96,10 @@ def over?(board)
 end
 
 
-def winner?(board)
-
+def winner(board)
+ if win_combos == won?(board)
+   board[win_combos.first]
+ end
 end
 
 
