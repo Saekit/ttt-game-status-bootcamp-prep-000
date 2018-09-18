@@ -61,7 +61,15 @@ def won?(board)
 end
 
 
-
+def full?(board)
+  board.all? do |space|
+    if position_taken?(board, index) == true
+      return true
+    else
+      return false
+    end
+  end
+end
 
 
 
